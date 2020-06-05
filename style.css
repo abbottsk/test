@@ -1,0 +1,133 @@
+html, body, nav, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #011638;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainMenu {
+  background: linear-gradient(rgb(229, 68, 109), rgb(196, 40, 71) 44%, rgb(128, 71, 94) 100%);
+}
+
+#mainMenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0rem 1rem;
+  transition: all 0.3s linear;
+}
+
+#mainMenu ul li a {
+  padding: 1rem;
+  margin: 0rem 0.2rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #f6f7f8;
+}
+
+#mainMenu ul li:last-child {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainMenu ul li a {
+    font-size: 0.7rem;
+  }
+}
+
+.hero {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Need some clever media query to ensure hero image doesn't look stupid on mobile devices */
+
+@media only screen and (max-width:600px) {
+  .hero {
+    height: 20vh;
+  }
+}
+
+.heroImage {
+  max-height: 50vh;
+  max-width: 60vw;
+}
+
+.projects {
+  background: linear-gradient(to top, rgb(0, 67, 175), #fff 100%);
+}
+
+.projects h2 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.card {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+
+.card:hover {
+  transform: translate(0.2rem, 0.2rem);
+}
+
+.card-img {
+  height: 33%;
+  padding: 1rem;
+}
+
+.card-img img {
+  max-height: 100%;
+}
+
+.card-title {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-desc {
+  text-align: left;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCSS RGB */
+/*
+$oxford-blue: rgba(1, 22, 56, 1);
+$twilight-lavender: rgba(128, 71, 94, 1);
+$cultured: rgba(246, 247, 248, 1);
+$paradise-pink: rgba(229, 68, 109, 1);
+$bright-maroon: rgba(196, 40, 71, 1);
+*/
