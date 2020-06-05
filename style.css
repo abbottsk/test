@@ -97,7 +97,7 @@ a {
 }
 
 .card-img {
-  height: 33%;
+  height: 5rem;
   padding: 1rem;
 }
 
@@ -107,13 +107,19 @@ a {
 
 .card-title {
   padding: 1rem 2rem;
+  margin: 0;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .card-desc {
+  padding: 1rem;
+}
+
+.card-desc p {
   text-align: left;
   line-height: 1.2;
+  margin: 0;
 }
 
 
