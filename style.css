@@ -62,7 +62,7 @@ a {
 }
 
 .projects {
-  background: linear-gradient(to top, rgb(0, 67, 175), #fff 100%);
+  margin-bottom: 2rem;
 }
 
 .projects h2 {
@@ -80,7 +80,7 @@ a {
 
 .card {
   text-align: center;
-  background: rgba(0, 0, 0, 0.05);
+  background: #f6f7f8;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
@@ -122,6 +122,16 @@ a {
   margin: 0;
 }
 
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#fff, rgba(0, 0, 0, 0.2))
+}
+
+footer p {
+  margin: 0;
+  padding: 1rem;
+}
 
 
 
