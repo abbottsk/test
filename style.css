@@ -48,14 +48,6 @@ a {
   justify-content: center;
 }
 
-/* Need some clever media query to ensure hero image doesn't look stupid on mobile devices */
-
-@media only screen and (max-width:600px) {
-  .hero {
-    height: 20vh;
-  }
-}
-
 .heroImage {
   max-height: 50vh;
   max-width: 60vw;
@@ -83,13 +75,6 @@ a {
   background: #f6f7f8;
   border-radius: 1rem;
   box-shadow: 0.2rem 0.2rem 0.5rem black;
-}
-
-@media only screen and (max-width: 600px) {
-  .card {
-    margin: 0 auto;
-    max-width: 50vw;
-  }
 }
 
 .card:hover {
@@ -133,7 +118,28 @@ footer p {
   padding: 1rem;
 }
 
+/* Media queries should sit here, at the end. This will keep them together and be easier to manage if we get to a larger scale */
 
+
+@media only screen and (max-width:600px) {
+  .hero {
+    height: 20vh;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+  
+  .project-grid {
+    padding: 0;
+  }
+}
 
 
 
